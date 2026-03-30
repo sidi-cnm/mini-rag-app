@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: str
     File_Allowwed_types : list[str]
     File_max_size: int
+    File_chunk_size: int
 
     class Config:
         env_file = ".env"
