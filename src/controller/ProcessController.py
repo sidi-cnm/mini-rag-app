@@ -26,7 +26,7 @@ class ProcessController(baseController):
     def get_file_loader(self, file_id: str):
 
         extension = self.get_file_extension(file_id)
-        file_path = os.path.join(self.projects_path, file_id)
+        
         file_path = os.path.join(self.projects_path, self.project_id, file_id)
 
 
